@@ -8,3 +8,34 @@
   margin:0;
   border-spacing:0;
 }
+
+body {
+  overflow-x:hidden;
+  background:$fogwar;
+
+  &, main, #home {
+    display:grid;
+    place-items:center;
+  }
+
+  .background {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    z-index:-1;
+    object-fit:cover;
+  }
+
+  h1 {
+    color:$title-ashes;
+  }
+
+  li {
+    list-style:none;
+  }
+}
+
+@import 'header';
+@import 'home';

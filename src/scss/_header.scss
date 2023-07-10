@@ -1,0 +1,68 @@
+@import 'config';
+
+header {
+  width:100vw;
+  position:absolute;
+  top:0;
+  left:0;
+  display:flex;
+  gap:rem(790);
+  justify-content:center;
+  align-items:center;
+  padding:rem(8) 0;
+
+  .logo, li, button {
+    cursor:pointer;
+    opacity:.8;
+  }
+
+  li, button {
+    transition:.2s;
+
+    &:hover, &.active {
+      opacity:1;
+      transition:.2s;
+    }
+  }
+
+  .logo {
+    overflow:hidden;
+    width:rem(60);
+
+    img {
+      width:rem(66);
+    }
+  }
+
+  .toggle-menu {
+    display:none;
+  }
+
+  ul {
+    display:flex;
+    gap:rem(15);
+
+    li {
+      letter-spacing:rem(2);
+      font-size:rem(15);
+      padding:rem(11) rem(11);
+      color:$header-ashes;
+      
+      &:after {
+        content:'';
+        display:block;
+        margin: left;
+        width:0%;
+        height:rem(1);
+        margin-top:0rem;
+        transition:.2s;
+        opacity:.8;
+        background:$header-ashes;
+      }
+
+      &:hover:after, &.active:after {
+        width:100%;
+      }
+    }
+  }
+}

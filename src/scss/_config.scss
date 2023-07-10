@@ -6,7 +6,7 @@ $header-ashes:#F6F8F9;
 $title-ashes:#EDF2F4;
 
 $text-ashes:#D6E1E6;
-$cloudy:rgba(214, 225, 230, .8);
+$cloudy:rgba(214,225,230,.8);
 
 //timeline
 $time-title:#F3D766;
@@ -30,3 +30,8 @@ $text-button:#2D3233;
 $yellow-strong:#F3D766;
 
 $footer-text:rgba(251, 249, 255, .8);
+
+//px to rem 
+@function rem($pixels, $context: 16) {
+  @return ($pixels / $context) * 1rem
+}
