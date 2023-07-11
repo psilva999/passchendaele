@@ -1,5 +1,4 @@
-//home
-@keyframes show-title-home {
+@keyframes show-from-bottom {
   from {
     opacity:0;
     transform:translateY(.6rem);
@@ -11,7 +10,7 @@
   }
 }
 
-@keyframes show-text-home {
+@keyframes show-from-top {
   from {
     opacity:0;
     transform:translateY(-.6rem);
@@ -23,4 +22,26 @@
   }
 }
 
-//about
+@keyframes show-from-right {
+  from {
+    transform:translateX(.6rem);
+    opacity:0;
+  }
+
+  to {
+    transform:translateX(0);
+    opacity:1;
+  }
+}
+
+@keyframes show-from-left {
+  from {
+    transform:translateX(-.6rem);
+    opacity:0;
+  }
+
+  to {
+    transform:translateX(0);
+    opacity:1;
+  }
+}

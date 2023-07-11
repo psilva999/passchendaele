@@ -13,7 +13,7 @@ body {
   overflow-x:hidden;
   background:$fogwar;
 
-  &, main, #home {
+  &, main, .home.active {
     display:grid;
     place-items:center;
   }

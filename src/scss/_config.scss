@@ -38,6 +38,23 @@ $footer-text:rgba(251, 249, 255, .8);
   align-items:center;
 }
 
+//keyframes
+@mixin from-bottom {
+  animation:show-from-bottom .7s linear forwards;
+}
+
+@mixin from-top {
+  animation:show-from-top .7s linear forwards;
+}
+
+@mixin from-left {
+  animation:show-from-left .7s linear forwards;
+}
+
+@mixin from-right {
+  animation:show-from-right .7s linear forwards;
+}
+
 //px to rem 
 @function rem($pixels, $context: 16) {
   @return ($pixels / $context) * 1rem

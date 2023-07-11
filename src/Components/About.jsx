@@ -5,8 +5,8 @@ import Horses from '../assets/images/3-horses.jpg'
 const About = () => {
   return (
 
-    <section id='about' className='active'>
-      <article>
+    <section id='about'>
+      <article className='active'>
         <h1>About</h1>
 
         <div>
@@ -24,7 +24,7 @@ const About = () => {
         </div>
       </article>
 
-      <div className='imgs'>
+      <div className='imgs active'>
         <img src={ Death } alt="death of a soldier"/>
         <img src={ Troops } alt="troops"/>
         <img src={ Horses } alt="a soldier in a horse"/>

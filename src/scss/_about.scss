@@ -1,7 +1,7 @@
 @import 'config';
 
 #about {
-  &, .imgs {
+  &, .imgs.active {
     @include flex;
   }
 
@@ -11,9 +11,14 @@
 
   article {
     gap:rem(21);
+    display:none !important;
 
-    &, div {
-      display:grid;  
+    &.active {
+      @include from-left;
+    }
+
+    &.active, div {
+      display:grid !important;  
     }
 
     div {
@@ -30,6 +35,10 @@
   }
 
   .imgs {
+    display:none;
+  }
+
+  .imgs.active {
     align-items:start;
     gap:rem(16);
     position:relative;
@@ -38,10 +47,13 @@
     img {
       width:rem(160);
       object-fit:cover;
+      
+      @include from-right;
+
+      &:nth-child(2) {
+        margin-top:rem(-62);
+      }
     }
 
-    img:nth-child(2) {
-      margin-top:rem(-62);
-    }
   }
 }

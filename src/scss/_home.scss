@@ -1,16 +1,17 @@
 @import 'config';
 
-#home {
+.home {
   width:100vw;
   height:100vh;
+  display:none;
 
   &.active {
     h1 {
-      animation:show-title-home .7s linear forwards;
+      @include from-bottom;
     }
 
     p {
-      animation:show-text-home .7s linear forwards;
+      @include from-top;
     }
   }
 
