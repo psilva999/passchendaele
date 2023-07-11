@@ -4,13 +4,22 @@
   width:100vw;
   height:100vh;
 
+  &.active {
+    h1 {
+      animation:show-title-home .7s linear forwards;
+    }
+
+    p {
+      animation:show-text-home .7s linear forwards;
+    }
+  }
+
   article {
-    display:flex;
     flex-wrap:wrap;
-    justify-content:center;
-    align-items:center;
     width:rem(680);
     gap:rem(12);
+
+    @include flex;
   }
 
   h1, p {
@@ -19,11 +28,10 @@
 
   h1 {
     width:100%;
-    text-align:center;
-    font-size:rem(66);
+    font-size:rem(60);
     width:rem(550);
-    letter-spacing:rem(4);
-    line-height:rem(70);
+    letter-spacing:rem(3.5);
+    line-height:rem(63);
   }
 
   p {

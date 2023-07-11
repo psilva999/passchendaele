@@ -1,0 +1,21 @@
+@import 'config';
+
+body {
+  scrollbar-width:thin;
+  scrollbar-color:#7c6a6a;
+
+  &::-webkit-scrollbar {
+    width:.43rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background:$dark-war;
+    border-radius:0 0 .1rem .1rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background:$header-ashes;
+    background:$header-ashes;
+    border:.375rem solid $header-ashes;
+  }
+}

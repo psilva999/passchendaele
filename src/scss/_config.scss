@@ -31,6 +31,13 @@ $yellow-strong:#F3D766;
 
 $footer-text:rgba(251, 249, 255, .8);
 
+//
+@mixin flex {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
 //px to rem 
 @function rem($pixels, $context: 16) {
   @return ($pixels / $context) * 1rem

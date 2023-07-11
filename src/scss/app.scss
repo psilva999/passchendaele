@@ -35,7 +35,20 @@ body {
   li {
     list-style:none;
   }
+
+  #about, #soldiers, #timeline, #remember {
+    padding:rem(120) 0;
+
+    h1 {
+      font-size:rem(43);
+      letter-spacing:rem(2.2);
+    }
+  }
 }
+
+@import 'scroolbar';
 
 @import 'header';
 @import 'home';
+
+@import 'about';

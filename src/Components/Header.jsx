@@ -12,7 +12,7 @@ const Header = () => {
         <button className='toggle-menu'></button>
         
         <ul>
-          <li className='active'>about</li>
+          <li>about</li>
           <li>soldiers</li>
           <li>timeline</li>
           <li>remember</li>

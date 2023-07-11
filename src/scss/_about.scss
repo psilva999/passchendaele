@@ -1,0 +1,47 @@
+@import 'config';
+
+#about {
+  &, .imgs {
+    @include flex;
+  }
+
+  padding-top:rem(170) !important;
+  align-items:start !important;
+  gap:rem(56);
+
+  article {
+    gap:rem(21);
+
+    &, div {
+      display:grid;  
+    }
+
+    div {
+      gap:rem(11);
+    }
+  }
+
+  p {
+    color:$cloudy;
+    font-size:rem(21);
+    width:rem(490);
+    font-weight:300;
+    letter-spacing:rem(.5);
+  }
+
+  .imgs {
+    align-items:start;
+    gap:rem(16);
+    position:relative;
+    left:rem(-6);
+
+    img {
+      width:rem(160);
+      object-fit:cover;
+    }
+
+    img:nth-child(2) {
+      margin-top:rem(-62);
+    }
+  }
+}

@@ -1,7 +1,7 @@
 const Home = () => {
   return (
 
-    <section id='home'> 
+    <section id='home' className='active'> 
       <article>
         <h1>The Battle of  Passchendaele</h1>
 
