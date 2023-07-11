@@ -30,8 +30,9 @@
     color:$cloudy;
     font-size:rem(21);
     width:rem(490);
-    font-weight:300;
     letter-spacing:rem(.5);
+
+    @include weight;
   }
 
   .imgs {

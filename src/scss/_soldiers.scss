@@ -1,0 +1,43 @@
+@import 'config';
+
+#soldiers {
+  display:grid;
+  place-items:center;
+  gap:rem(38);
+
+  h1 {
+    width:rem(1265);
+    margin-left:rem(-12);
+    text-align:left;
+  }
+
+  figure {
+    display:grid;
+    gap:rem(9);
+  }
+
+  img {
+    width:rem(950);
+    height:rem(450);
+    object-fit:cover;
+  }
+
+  figcaption {
+    color:$opaque-text;
+    letter-spacing:rem(1);
+    margin-left:rem(7);
+
+    @include weight;
+
+    &:before {
+      content:'';
+      display:block;
+      position:absolute;
+      background:$b1;
+      width:rem(2);
+      height:rem(20);
+      margin-left:rem(-7);
+      margin-top:rem(1);
+    }
+  }
+}

@@ -2,7 +2,7 @@ import Header from './Components/Header'
 import Home from './Components/Home'
 
 import About from './Components/About'
-//import Soldiers from './Components/Soldiers'
+import Soldiers from './Components/Soldiers'
 //import Timeline from './Components/Timeline'
 
 //import Remember from './Components/Remember'
@@ -23,7 +23,7 @@ function App() {
         <Home/>
         <About/>
 
-        {/* <Soldiers/> */}
+        <Soldiers/>
         {/* <Timeline/> */}
 
         {/* <Remember/> */}

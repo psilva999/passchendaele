@@ -36,13 +36,21 @@ body {
     list-style:none;
   }
 
-  #about, #soldiers, #timeline, #remember {
+  #about, #timeline {
     padding:rem(120) 0;
+  }
 
+  #about, #soldiers, #timeline, #remember {
     h1 {
       font-size:rem(43);
       letter-spacing:rem(2.2);
     }
+  }
+
+  #soldiers, #remember {
+    padding:rem(80) 0;
+    background:$dark-war;
+    width:100vw;
   }
 }
 
@@ -52,3 +60,4 @@ body {
 @import 'home';
 
 @import 'about';
+@import 'soldiers';
