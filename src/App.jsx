@@ -5,7 +5,7 @@ import About from './Components/About'
 import Soldiers from './Components/Soldiers'
 //import Timeline from './Components/Timeline'
 
-//import Remember from './Components/Remember'
+import Remember from './Components/Remember'
 //import Newsletter from './Components/Newsletter'
 // import Footer from './Components/Footer'
 
@@ -26,7 +26,7 @@ function App() {
         <Soldiers/>
         {/* <Timeline/> */}
 
-        {/* <Remember/> */}
+        <Remember/>
         {/* <Newsletter/> */}
       </main>
 

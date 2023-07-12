@@ -6,9 +6,15 @@ header {
   top:0;
   left:0;
   gap:rem(790);
-  padding:rem(8) 0;
+  padding:rem(8) 0 rem(12) 0;
+  z-index:2;
 
   @include flex;
+
+  &.fixed {
+    position:fixed;
+    background:$dark-war;
+  }
 
   .logo, li, button {
     cursor:pointer;

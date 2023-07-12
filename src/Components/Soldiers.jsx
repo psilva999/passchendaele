@@ -6,7 +6,7 @@ const Soldiers = () => {
     <section id='soldiers'>
       <h1>Soldiers</h1>
 
-      <div>
+      <div className='slide'>
         <figure> <img src={ fig1 } alt="Canadian prisioners"/>
 
           <figcaption>Canadian prisioners in Passchendaele</figcaption>

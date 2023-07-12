@@ -22,43 +22,11 @@ $opaque-h2:rgba(237, 242, 244, .8);
 $opaque-text:rgba(251, 249, 255, .7);
 
 $b1:rgba(254, 215, 102, .7);
-$b2: rgba(141, 153, 174, .7);
-$b3: rgba(255, 39, 54, .7);
+$b2:rgba(255, 39, 54, .7);
+$b3:rgba(141, 153, 174, .7);
 
 //newsletter and footer
 $text-button:#2D3233; 
 $yellow-strong:#F3D766;
 
 $footer-text:rgba(251, 249, 255, .8);
-
-//mixins
-@mixin flex {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-
-@mixin from-bottom {
-  animation:show-from-bottom .7s linear forwards;
-}
-
-@mixin from-top {
-  animation:show-from-top .7s linear forwards;
-}
-
-@mixin from-left {
-  animation:show-from-left .7s linear forwards;
-}
-
-@mixin from-right {
-  animation:show-from-right .7s linear forwards;
-}
-
-@mixin weight {
-  font-weight:300;
-}
-
-//px to rem 
-@function rem($pixels, $context: 16) {
-  @return ($pixels / $context) * 1rem
-}

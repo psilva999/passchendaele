@@ -1,0 +1,68 @@
+@import 'config';
+
+#remember {
+  @include grid;
+  gap:rem(75);
+
+  h1 {
+    @include from-top;
+  }
+
+  .facts {
+    @include flex;
+    @include from-bottom;
+
+    align-items:start !important;
+    flex-wrap:wrap;
+    width:rem(1060);
+    gap:rem(65);
+    row-gap:rem(55);
+  }
+
+  article {
+    display:grid;
+    gap:rem(8);
+  }
+
+  h2 {
+    margin-left:rem(9);
+    color:$opaque-h2;
+    letter-spacing:rem(1);
+    font-size:rem(19);
+
+    &:before {
+      content:'';
+      display:block;
+      position:absolute;
+      width:rem(5);
+      height:rem(23);
+      margin-top:rem(1.5);
+      margin-left:rem(-8);
+    }
+  }
+
+  article {
+    &:first-child h2:before,
+    &:nth-child(5) h2:before {
+      background:$b1;
+    }
+
+    &:nth-child(2) h2:before, 
+    &:last-child h2:before {
+      background:$b2;
+    }
+
+    &:nth-child(3) h2:before,
+    &:nth-child(4) h2:before {
+      background:$b3;
+    }
+  }
+
+  p {
+    color:$opaque-text;
+    width:rem(310);
+    letter-spacing:rem(1);
+
+    @include weight;
+  }
+}

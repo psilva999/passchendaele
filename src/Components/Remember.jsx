@@ -1,6 +1,48 @@
 const Remember = () => {
   return (
-    <div>Remember</div>
+    <section id='remember' className='remember'>
+      <h1>Remember</h1>
+
+      <div className='facts'>
+        <article> <h2>Centenary</h2>
+          <p>
+            2017 marked the centenary of the Battle of Passchendaele with events taking place in Belgium in July.
+          </p>
+        </article>
+
+        <article> <h2>Western Front</h2>
+          <p>
+            The battle took place on the Western Front, from July to November 1917, for control of land south and east of the Belgian city of Ypres in West Flanders.
+          </p>
+        </article>
+
+        <article> <h2>Third Battle of Ypres</h2>
+          <p>
+            The battle which was also known as The Third Battle of Ypres was one of the largest battles Britain’s Armed Forces have ever fought.
+          </p>
+        </article>
+
+        <article> <h2>30 years</h2>
+          <p>
+            Within a few days of the battle the heaviest rain for 30 years had turned the soil into a quagmire, producing thick mud.
+          </p>
+        </article>
+
+        <article> <h2>From mud</h2>
+          <p>
+            The colours represented the struggle of the Corps — ‘From mud, through blood to the green fields beyond’.
+          </p>
+        </article>
+
+        <article> <h2>A fateful number</h2>
+          <p>
+            Around 325,000 Allied and 260,000 German soldiers died in the Battle. Some 42,000 bodies have never been recovered.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
   )
 }
 
