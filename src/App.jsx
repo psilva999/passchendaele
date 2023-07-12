@@ -6,8 +6,8 @@ import Soldiers from './Components/Soldiers'
 //import Timeline from './Components/Timeline'
 
 import Remember from './Components/Remember'
-//import Newsletter from './Components/Newsletter'
-// import Footer from './Components/Footer'
+import Newsletter from './Components/Newsletter'
+import Footer from './Components/Footer'
 
 import Background from './assets/images/0-background.jpg'
 
@@ -27,10 +27,10 @@ function App() {
         {/* <Timeline/> */}
 
         <Remember/>
-        {/* <Newsletter/> */}
+        <Newsletter/>
       </main>
 
-      {/* <Footer/> */}
+      <Footer/>
     </>
   )
 }

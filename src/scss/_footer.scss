@@ -1,0 +1,96 @@
+@import 'config';
+
+footer {
+  @include size-container;
+  @include grid;
+  @include from-bottom;
+
+  margin:3rem auto 1rem auto;
+  gap:rem(90);
+  
+  section, .copy {
+    @include flex;
+
+    width:100%; 
+    justify-content:space-between;
+  }
+
+  section {
+    align-items:start;
+  }
+
+  h2 {
+    color:$opaque-h2;
+    max-width:rem(127);
+    font-size:rem(18);
+    letter-spacing:rem(.5);
+  }
+
+  li {
+    letter-spacing:rem(1);
+  }
+
+  p, li {
+    @include weight;
+    color:$opaque-text;
+  }
+
+  .ypres {
+    width:rem(55);
+    overflow:hidden;
+
+    img {
+      width:rem(60);
+    }
+  }
+
+  article {
+    display:grid;
+    gap:rem(12);
+
+    &:first-child {
+      p {
+        width:rem(200);
+        letter-spacing:rem(1);
+      }
+    }
+
+    &:nth-child(2), &:nth-child(3) {
+      li {
+        transition:.2s;
+        cursor:pointer;
+      }
+
+      li:hover {
+        transition:.2s;
+        color:$time-title;
+      }
+    }
+
+    .social {
+      display:flex;
+      gap:rem(12);
+    }
+
+    ul {
+      display:grid;
+      gap:rem(9);
+    }
+  }
+
+  .copy {
+    p {
+      opacity:.8;
+      font-size:rem(12);
+    }
+    
+    div {
+      display:flex;
+      gap:rem(12);
+    }
+
+    img {
+      width:rem(25);
+    }
+  }
+}

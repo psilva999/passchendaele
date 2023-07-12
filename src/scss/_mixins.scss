@@ -12,6 +12,10 @@
   place-items:center;
 }
 
+@mixin size-container {
+  width:rem(1060);
+}
+
 @mixin weight {
   font-weight:300;
 }
