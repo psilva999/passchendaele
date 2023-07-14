@@ -1,5 +1,5 @@
 import Header from './Components/Header'
-// import Home from './Components/Home'
+import Home from './Components/Home'
 
 // import About from './Components/About'
 // import Soldiers from './Components/Soldiers'
@@ -20,7 +20,7 @@ function App() {
       <main>
         <img src={ Background } className='background'/>
 
-        {/* <Home/> */}
+        <Home/>
         {/* <About/> */}
 
         {/* <Soldiers/> */}

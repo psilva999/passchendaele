@@ -21,7 +21,7 @@ header {
     opacity:.8;
   }
 
-  li, button {
+  li {
     transition:.2s;
 
     &:hover, &.active {
@@ -43,6 +43,8 @@ header {
     display:none;
     width:3rem;
     height:2rem;
+    position:relative;
+    top:rem(2);
     background:none;
     font-size:rem(12);
     color:$header-ashes;
@@ -70,9 +72,9 @@ header {
     }
   }
 
-  .close-menu.active {
+  .close-menu {
     position:absolute;
-
+    display:none;
     width:2rem;
     height:2rem;
     top:.35rem;
