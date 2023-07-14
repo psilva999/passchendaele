@@ -5,7 +5,7 @@ footer {
   @include grid;
   @include from-bottom;
 
-  margin:3rem auto 1rem auto;
+  margin:3rem auto .5rem auto;
   gap:rem(90);
   
   section, .copy {
@@ -32,6 +32,8 @@ footer {
 
   p, li {
     @include weight;
+
+    font-size:rem(14);
     color:$opaque-text;
   }
 
@@ -49,6 +51,8 @@ footer {
     gap:rem(12);
 
     &:first-child {
+      gap:rem(4) !important;
+
       p {
         width:rem(200);
         letter-spacing:rem(1);
@@ -69,7 +73,11 @@ footer {
 
     .social {
       display:flex;
-      gap:rem(12);
+      gap:rem(10);
+
+      img {
+        width:rem(21);
+      }
     }
 
     ul {

@@ -1,6 +1,6 @@
 @import 'config';
 
-body {
+body, .menu.active {
   scrollbar-width:thin;
   scrollbar-color:#7c6a6a;
 

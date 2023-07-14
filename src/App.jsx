@@ -1,13 +1,13 @@
 import Header from './Components/Header'
-import Home from './Components/Home'
+// import Home from './Components/Home'
 
-import About from './Components/About'
-import Soldiers from './Components/Soldiers'
+// import About from './Components/About'
+// import Soldiers from './Components/Soldiers'
 //import Timeline from './Components/Timeline'
 
-import Remember from './Components/Remember'
-import Newsletter from './Components/Newsletter'
-import Footer from './Components/Footer'
+//import Remember from './Components/Remember'
+//import Newsletter from './Components/Newsletter'
+// import Footer from './Components/Footer'
 
 import Background from './assets/images/0-background.jpg'
 
@@ -20,17 +20,18 @@ function App() {
       <main>
         <img src={ Background } className='background'/>
 
-        <Home/>
-        <About/>
+        {/* <Home/> */}
+        {/* <About/> */}
 
-        <Soldiers/>
+        {/* <Soldiers/> */}
         {/* <Timeline/> */}
 
-        <Remember/>
-        <Newsletter/>
+        {/* <Remember/> */}
+        {/* <Newsletter/> */}
       </main>
 
-      <Footer/>
+      {/* <Footer/> */}
+      <div className='close-menu-by-outside'></div>
     </>
   )
 }

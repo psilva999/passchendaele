@@ -41,9 +41,74 @@ header {
 
   .toggle-menu {
     display:none;
+    width:3rem;
+    height:2rem;
+    background:none;
+    font-size:rem(12);
+    color:$header-ashes;
+    letter-spacing:rem(1);
+
+    &:before {
+      content:'';
+      position:absolute;
+      width:2rem;
+      height:.3rem;
+      margin-left:-1rem;
+      margin-top:-.6rem;
+      border-bottom:.125rem solid $header-ashes;
+      border-top:.125rem solid $header-ashes;
+    }
+
+    &:after {
+      content:'menu';
+      position:absolute;
+      color:$header-ashes;
+      margin-top:-.1rem;
+      margin-left:-1rem;
+      font-size:.7rem;
+      font-weight:300;
+    }
   }
 
-  ul {
+  .close-menu.active {
+    position:absolute;
+
+    width:2rem;
+    height:2rem;
+    top:.35rem;
+    right:.75rem;
+    cursor:pointer;
+    transition:.2s;
+    opacity:.8;
+
+    &:hover {
+      opacity:1;
+      transition:.2s;
+    }
+
+    &:before, &:after {
+      content:'';
+      display:block;
+      background:$whitish;
+      width:1.3rem;
+      height:.15rem;
+      position:absolute;
+      border-radius:1rem;
+      margin-left:rem(5);
+    }
+
+    &:before {
+      margin-top:rem(15);
+      transform:rotate(-45deg);
+    }
+
+    &:after {
+      margin-top:rem(15);
+      transform:rotate(45deg);
+    }
+  }
+
+  .menu {
     display:flex;
     gap:rem(15);
 

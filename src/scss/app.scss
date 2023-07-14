@@ -59,6 +59,21 @@ body {
       text-align:left;
     }
   }
+
+  .close-menu-by-outside {
+    display:none;
+
+    &.active {
+      display:block;
+      position:fixed;
+      z-index:1;
+      top:0;
+      width:100vw;
+      height:100vh;
+      left:0;
+      background:$silent;
+    }
+  }
 }
 
 @import 'scroolbar';
@@ -74,3 +89,6 @@ body {
 
 @import 'newsletter';
 @import 'footer';
+
+//queries
+@import './queries/header-home'

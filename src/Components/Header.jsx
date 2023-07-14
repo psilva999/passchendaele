@@ -11,7 +11,9 @@ const Header = () => {
       <nav>
         <button className='toggle-menu'></button>
         
-        <ul>
+        <ul className='menu'>
+          <div className='close-menu'></div>
+
           <li>about</li>
           <li>soldiers</li>
           <li>timeline</li>
