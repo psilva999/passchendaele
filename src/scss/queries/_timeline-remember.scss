@@ -1,0 +1,67 @@
+@media (max-width:rem(1366)) {
+  #soldiers, #remember {
+
+
+    h1 {
+      margin-left:rem(0) !important;
+    }
+  }
+}
+
+@media (max-width:rem(1300)) {
+  #soldiers, #remember {
+
+    h1, .facts {
+      width:rem(1000) !important;
+      gap:0;
+      row-gap:rem(42);
+      justify-content:space-between !important;
+    }
+  }
+}
+
+@media (max-width:rem(1055)) {
+  #soldiers, #remember {
+    gap:rem(55);
+
+    h1, .facts {
+      width:rem(490) !important;
+    }
+
+    p {
+      width:rem(230);
+    }
+  }
+}
+
+@media (max-width:rem(640)) {
+  #soldiers, #remember {
+    gap:rem(45) !important;
+
+    h1, .facts, p {
+      width:rem(373) !important;
+    }
+
+    .facts {
+      gap:rem(36);
+    }
+  }
+}
+
+@media (max-width:rem(410)) {
+    #soldiers, #remember {
+    gap:rem(35) !important;
+
+    h1, .facts, p {
+      width:rem(263) !important;
+    }
+
+    .facts {
+      gap:rem(30);
+    }
+  }
+}
+
+@media (max-width:rem(390)) {
+
+}

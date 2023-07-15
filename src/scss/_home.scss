@@ -18,7 +18,7 @@
   article {
     flex-wrap:wrap;
     width:rem(680);
-    gap:rem(12);
+    gap:rem(10);
 
     @include flex;
   }

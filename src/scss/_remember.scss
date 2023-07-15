@@ -2,6 +2,7 @@
 
 #remember {
   @include grid;
+  
   gap:rem(75);
   padding-bottom:7.5rem !important;
 
@@ -17,7 +18,7 @@
     align-items:start !important;
     flex-wrap:wrap;
     gap:rem(65);
-    row-gap:rem(55);
+    row-gap:rem(45);
   }
 
   article {

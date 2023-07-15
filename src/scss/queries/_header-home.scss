@@ -32,7 +32,7 @@
       &.active {
         height:rem(270);
         width:100vw;
-        position:absolute;
+        position:fixed;
         right:0;
         top:0;
         padding:rem(21) 0 rem(21) 0;
@@ -70,14 +70,13 @@
 
   .home {
     article {
-      // background:grey;
+      gap:rem(7);
       width:rem(570);
     }
 
     h1 {
       font-size:rem(50);
       line-height:rem(54);
-      
     }
 
     p {
@@ -132,14 +131,18 @@
     p {
       font-size:rem(16);
       letter-spacing:rem(2);
-      width:rem(290);
+      width:rem(420);
     }
   }
 }
 
-@media (max-width: rem(460)) {
+@media (max-width:rem(480)) {
   header .menu.active li {
     width:rem(150);
+  }
+
+  .home p {
+    max-width:rem(280);
   }
 }
 
@@ -147,20 +150,19 @@
   .home {
     article {
       width:95vw;
-      gap:rem(5);
+      gap:rem(9);
     }
 
     h1 {
-      font-size:rem(30);
+      font-size:rem(32);
       line-height:rem(33);
-      letter-spacing:rem(2.5);
+      letter-spacing:rem(2);
       max-width:rem(272);
     }
 
     p {
       font-size:rem(16);
       letter-spacing:rem(2);
-      max-width:rem(285);
     }
   }
 }

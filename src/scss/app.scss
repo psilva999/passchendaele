@@ -10,13 +10,22 @@
   border-spacing:0;
 }
 
-body {
+html, body {
   overflow-x:hidden;
-  background:$fogwar;
+}
 
-  &, main, .home.active {
-    display:grid;
-    place-items:center;
+body {
+  background:$fogwar;
+  overflow-y:auto;
+
+  main, .home.active {
+    overflow-x:hidden;
+
+    @include grid;
+  }
+
+  main, section, article, footer {
+    overflow:hidden !important;
   }
 
   .background {
@@ -93,4 +102,10 @@ body {
 @import 'footer';
 
 //queries
-@import './queries/header-home'
+@import './queries/global';
+
+@import './queries/header-home';
+@import './queries/about-soldiers';
+
+@import './queries/timeline-remember';
+@import './queries/newsletter-footer';

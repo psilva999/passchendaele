@@ -1,11 +1,11 @@
 import Header from './Components/Header'
 import Home from './Components/Home'
 
-// import About from './Components/About'
+import About from './Components/About'
 // import Soldiers from './Components/Soldiers'
 //import Timeline from './Components/Timeline'
 
-//import Remember from './Components/Remember'
+import Remember from './Components/Remember'
 //import Newsletter from './Components/Newsletter'
 // import Footer from './Components/Footer'
 
@@ -21,12 +21,12 @@ function App() {
         <img src={ Background } className='background'/>
 
         <Home/>
-        {/* <About/> */}
+        <About/>
 
         {/* <Soldiers/> */}
         {/* <Timeline/> */}
 
-        {/* <Remember/> */}
+        <Remember/>
         {/* <Newsletter/> */}
       </main>
 
