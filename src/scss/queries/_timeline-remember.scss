@@ -11,7 +11,8 @@
   #soldiers, #remember {
 
     h1, .facts {
-      width:rem(1000) !important;
+      @include footer-remember;
+
       gap:0;
       row-gap:rem(42);
       justify-content:space-between !important;
@@ -38,6 +39,7 @@
 }
 
 @media (max-width:rem(640)) {
+  
   #soldiers, #remember {
     gap:rem(45) !important;
 

@@ -7,7 +7,7 @@ import About from './Components/About'
 
 import Remember from './Components/Remember'
 import Newsletter from './Components/Newsletter'
-// import Footer from './Components/Footer'
+import Footer from './Components/Footer'
 
 import Background from './assets/images/0-background.jpg'
 
@@ -30,7 +30,7 @@ function App() {
         <Newsletter/>
       </main>
 
-      {/* <Footer/> */}
+      <Footer/>
       <div className='close-menu-by-outside'></div>
     </>
   )

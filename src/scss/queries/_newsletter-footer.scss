@@ -1,3 +1,9 @@
+@media (max-width:rem(1300)) {
+  footer {
+    @include footer-remember;
+  }
+}
+
 @media (max-width:rem(1055)) {
   #newsletter {
     @include little-size;
@@ -22,6 +28,44 @@
       font-size:rem(12);
     }
   }
+
+  footer {
+    @include middle-size;
+    gap:rem(45);
+    margin:0rem auto .5rem auto;
+
+    section {
+      flex-wrap:wrap;
+      gap:rem(50);
+      row-gap:rem(30);
+      justify-content:left;
+    }
+
+    .copy {
+      flex-wrap:wrap !important;
+    }
+
+    p {
+      width:rem(160) !important;
+    }
+  }
+}
+
+@media (max-width:rem(640)) { 
+  footer {
+    @include little-size;
+    gap:rem(30);
+
+    .copy {
+      justify-content:left;
+      gap:rem(9);
+    }
+
+    section {
+      gap:rem(40);
+      row-gap:rem(20);
+    }
+  }
 }
 
 @media (max-width:rem(410)) {
@@ -37,6 +81,18 @@
 
     input {
       width:rem(240);
+    }
+  }
+
+  footer {
+    @include min-size;
+
+    section {
+      gap:rem(21);
+    }
+
+    article:nth-child(4) li:first-child {
+      width:rem(105);
     }
   }
 }

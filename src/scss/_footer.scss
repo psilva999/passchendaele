@@ -1,12 +1,12 @@
 @import 'config';
 
 footer {
-  @include size-container;
   @include grid;
   @include from-bottom;
 
   margin:3rem auto .5rem auto;
   gap:rem(90);
+  width:rem(1050);
   
   section, .copy {
     @include flex;
@@ -90,11 +90,12 @@ footer {
     p {
       opacity:.8;
       font-size:rem(12);
+      width:rem(255) !important;
     }
     
     div {
       display:flex;
-      gap:rem(12);
+      gap:rem(7);
     }
 
     img {

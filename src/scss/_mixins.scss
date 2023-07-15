@@ -21,6 +21,10 @@
   width:rem(1060);
 }
 
+@mixin footer-remember {
+  width:rem(1000) !important;
+}
+
 @mixin middle-size {
   width:rem(490) !important;
 }
