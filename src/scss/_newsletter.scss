@@ -3,7 +3,7 @@
 #newsletter {
   background:grey;
   position:relative;
-  margin:8rem 0 6rem 0;
+  margin:6rem 0 6rem 0;
   height:rem(280);
   width:rem(825);
 
@@ -23,6 +23,7 @@
     height:100%;
     object-fit:cover;
     position:absolute;
+    filter:brightness(70%);
   }
 
   article {
@@ -69,5 +70,12 @@
     letter-spacing:rem(.5);
     border-radius:rem(32);
     padding:rem(9) rem(26);
+    transition:.2s;
+    
+    &:disabled {
+      cursor:auto;
+      opacity:.5;
+      transition:.2s;
+    }
   }
 }

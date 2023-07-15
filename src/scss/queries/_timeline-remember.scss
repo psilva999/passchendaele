@@ -1,7 +1,6 @@
 @media (max-width:rem(1366)) {
   #soldiers, #remember {
 
-
     h1 {
       margin-left:rem(0) !important;
     }
@@ -25,12 +24,16 @@
     gap:rem(55);
 
     h1, .facts {
-      width:rem(490) !important;
+      @include middle-size;
     }
 
     p {
       width:rem(230);
     }
+  }
+
+  #remember {
+    padding-bottom:6rem !important;
   }
 }
 
@@ -39,7 +42,7 @@
     gap:rem(45) !important;
 
     h1, .facts, p {
-      width:rem(373) !important;
+      @include little-size;
     }
 
     .facts {
@@ -53,15 +56,11 @@
     gap:rem(35) !important;
 
     h1, .facts, p {
-      width:rem(263) !important;
+      @include min-size;
     }
 
     .facts {
       gap:rem(30);
     }
   }
-}
-
-@media (max-width:rem(390)) {
-
 }

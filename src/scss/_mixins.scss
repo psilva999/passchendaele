@@ -12,12 +12,25 @@
   place-items:center;
 }
 
+@mixin weight {
+  font-weight:300;
+}
+
+//size
 @mixin size-container {
   width:rem(1060);
 }
 
-@mixin weight {
-  font-weight:300;
+@mixin middle-size {
+  width:rem(490) !important;
+}
+
+@mixin little-size {
+  width:rem(373) !important;
+}
+
+@mixin min-size {
+  width:rem(263) !important;
 }
 
 //animations

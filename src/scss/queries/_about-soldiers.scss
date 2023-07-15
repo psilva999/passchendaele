@@ -23,8 +23,9 @@
     }
 
     .imgs.active {
+      @include middle-size;
+
       left:0;
-      width:rem(490);
       gap:rem(9);
       justify-content:left;
 
@@ -56,9 +57,12 @@
       gap:rem(6) !important;
     }
 
+    p, .imgs.active {
+      @include little-size;
+    }
+
     p {
       font-size:rem(18);
-      width:rem(373);
 
       &:last-child {
         display:none;
@@ -66,7 +70,6 @@
     }
 
     .imgs.active {
-      width:rem(373);
       gap:rem(9);
 
       img {
@@ -101,7 +104,8 @@
 
     .imgs.active {
       gap:rem(3);
-      width:rem(263);
+      
+      @include min-size;
 
       img:first-child {
         height:rem(190);

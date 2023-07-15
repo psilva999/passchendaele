@@ -1,19 +1,42 @@
-@media (max-width:rem(1300)) {
+@media (max-width:rem(1055)) {
+  #newsletter {
+    @include little-size;
+    margin:4rem 0 4rem 0;
+    height:rem(190);
 
+    article {
+      gap:rem(18);
+    }
+
+    h1 {
+      font-size:rem(30);
+      letter-spacing:rem(1);
+    }
+
+    input {
+      width:rem(280);
+      font-size:rem(15);
+    }
+
+    button {
+      font-size:rem(12);
+    }
+  }
 }
 
-@media (max-width:rem(990)) {
+@media (max-width:rem(410)) {
+  #newsletter {
+    @include min-size;
+    margin:4rem 0 4rem 0;
+    height:rem(180);
 
-}
+    h1 {
+      font-size:rem(27);
+      letter-spacing:rem(1);
+    }
 
-@media (max-width:rem(640)) {
-
-}
-
-@media (max-width:rem(460)) {
-
-}
-
-@media (max-width:rem(390)) {
-
+    input {
+      width:rem(240);
+    }
+  }
 }
