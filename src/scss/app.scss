@@ -38,6 +38,38 @@ body {
     object-fit:cover;
   }
 
+  .scroll-to-about {
+    position:absolute;
+    width:100vw;
+    left:0;
+    bottom:2rem;
+
+    &, span {
+      @include grid;
+    }
+
+    span {
+      width:2.5rem;
+      height:2.5rem;
+      border-radius:100%;
+      cursor:pointer;
+      transition:.2s;
+      @include to-appear;
+
+      img {
+        opacity:.8;
+        transition:.2s;
+        animation:arrow-down 3.6s linear infinite;
+      }
+
+      &:hover img {
+        opacity:1;
+        transition:.2s;
+        animation-play-state:paused;
+      }
+    }
+  }
+
   h1 {
     color:$title-ashes;
   }
@@ -84,6 +116,49 @@ body {
 
       animation:full-opacity .4s linear forwards;
     }
+  }
+
+  .scroll-to-home {
+    display:none;
+
+    &.active {
+      @include grid;
+
+      animation:show-arrow-from-bottom .7s linear forwards;
+      cursor:pointer;
+      position:fixed;
+      bottom:2rem;
+      right:3.3rem;
+      background:$dark-war;
+      width:2.5rem;
+      height:2.5rem;
+      border-radius:100%;
+      opacity:.6;
+      transition:.2s;
+      z-index:2;
+
+      &:hover {
+        transition:.2s;
+        opacity:1;
+      }
+
+      img {
+        width:1rem;
+        transform:rotate(180deg);
+      }
+    }
+  }
+}
+
+@media (max-width:rem(990)) {
+  .scroll-to-home.active {
+    right:1rem !important;
+  }
+}
+
+@media (max-height:rem(500)) {
+  .scroll-to-about {
+    bottom:.5rem !important;
   }
 }
 
