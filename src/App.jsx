@@ -14,27 +14,16 @@ import Footer from './Components/Footer'
 
 import Background from './assets/images/0-background.jpg'
 import Arrow from './assets/svg/4-arrow.svg'
-import { hideMenu } from './events/handleMenu'
+import { hideMenu, removeActive } from './events/handleMenu'
 
 function App() {
+  useEffect(() => window.addEventListener('resize', removeActive))
 
   useEffect(() => {
     window.addEventListener("scroll", handleToHome)
 
     return () => window.removeEventListener('scroll', handleToHome)
   })
-
-  window.addEventListener('resize', removeActive)
-
-  function removeActive() {
-    if (!window.matchMedia('(max-width:1055px)')) {
-
-      document.querySelector('.menu').classList.remove('active')
-      document.querySelector('.close-menu-by-outside').classList.remove('active')
-
-      console.log(document.querySelector('.menu'), document.querySelector('.close-menu-by-outside'))
-    }
-  }
 
   const handleToHome = () => {
     const button = document.querySelector('.scroll-to-home')

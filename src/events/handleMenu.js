@@ -2,6 +2,7 @@ export function handleItems(e) {
   document.querySelectorAll('nav li').forEach(items => items.classList.remove('active'))
 
   e.target.classList.add('active')
+  hideMenu()
 }
 
 export function openMenu() {
@@ -34,4 +35,9 @@ export function hideMenu() {
       clearInterval(hide)
     }
   }
+}
+
+export function removeActive() {
+  document.querySelector('.menu').classList.remove('active')
+  document.querySelector('.close-menu-by-outside').classList.remove('active')
 }
