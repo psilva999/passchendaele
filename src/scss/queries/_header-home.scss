@@ -2,7 +2,8 @@
   header {
     justify-content:space-between;
     gap:0;
-    padding:rem(8) rem(12) rem(12) rem(12);
+    padding-left:rem(17);
+    padding-right:rem(19);
 
     .menu {
       gap:rem(10);
@@ -10,9 +11,8 @@
   }
 }
 
-@media (max-width:rem(990)) {
+@media (max-width:rem(1055)) {
   header {
-    padding:rem(9) rem(9) rem(9) rem(17);
 
     .toggle-menu {
       display:block;
@@ -81,7 +81,6 @@
 
     p {
       font-size:rem(18);
-      // background:black;
       width:100%;
     }
   }

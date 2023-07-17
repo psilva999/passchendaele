@@ -6,14 +6,17 @@ header {
   top:0;
   left:0;
   gap:rem(790);
-  padding:rem(8) 0 rem(12) 0;
+  padding-right:0;
+  padding-left:0;
   z-index:2;
+  animation:padding-header-absolute .3s linear forwards;
 
   @include flex;
 
   &.fixed {
     position:fixed;
     background:$dark-war;
+    animation:padding-header-fixed .4s linear forwards;
   }
 
   .logo, li, button {
