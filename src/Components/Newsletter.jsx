@@ -1,8 +1,33 @@
+import { useEffect } from 'react'
 import news from '../assets/images/7-newsletter.jpg'
 
 const Newsletter = () => {
-  return (
+  function regex() {
+    const input = document.querySelector('#email'),
+          button = document.querySelector('form button'),
 
+          regex = /^([a-z]){1,}([a-z0-9._-]){1,}([@]){1}([a-z]){2,}([.]){1}([a-z]){2,}([.]?){1}([a-z]?){2,}$/i
+
+    if (input.value.match(regex)) button.disabled = false
+
+    else button.disabled = true
+  }
+
+  useEffect(() => document.querySelector('form button').addEventListener('click', handleEmail))
+
+  function handleEmail(e) {
+    const input = document.querySelector('#email'),
+          button = document.querySelector('form button')
+
+    e.preventDefault()
+
+    if (button.disabled === false) {
+      input.disabled = true
+      button.disabled = true
+    }
+  }
+
+  return (
     <section id='newsletter' className='newsletter'>
       <img src={ news }/>
 
@@ -10,7 +35,12 @@ const Newsletter = () => {
         <h1>Newsletter</h1>
 
         <form>
-          <input type="email" id='email' placeholder='E-mail'/>
+          <input 
+            type="email" 
+            id='email' 
+            placeholder='E-mail'
+            onInput={ regex }/>
+
           <button disabled>SUBSCRIBE</button>
         </form>
 

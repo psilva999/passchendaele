@@ -1,8 +1,15 @@
+import { useEffect } from 'react'
+
 import Death from '../assets/images/1-death.jpg'
 import Troops from '../assets/images/2-troops.jpg'
 import Horses from '../assets/images/3-horses.jpg'
 
+import { textBackground } from '../events/highlighter'
+
 const About = () => {
+  useEffect(() => 
+    window.addEventListener('scroll', () => textBackground(0, 'rgba(166,150,88,0)', 'rgba(166,150,88,.6)')))
+
   return (
 
     <section id='about'>
@@ -15,7 +22,7 @@ const About = () => {
           </p>
 
           <p>
-            The battle took place on the Western Front, from July to November 1917, for control of the ridges south and east of the Belgian.
+            The battle took place on the Western Front, from July to November 1917, for control of the ridges <a className='background-detail'>south and east of the Belgian.</a>
           </p>
 
           <p>

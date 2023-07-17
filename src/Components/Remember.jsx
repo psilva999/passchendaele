@@ -1,4 +1,15 @@
+import { useEffect } from 'react'
+
+import { textBackground } from '../events/highlighter'
+
 const Remember = () => {
+  useEffect(() => {
+    window.addEventListener('scroll', () => { 
+      textBackground(1, 'rgba(9,8,9,0)', 'rgba(9,8,9,.6)')
+      textBackground(2, 'rgba(9,8,9,0)', 'rgba(9,8,9,.6)')
+    })
+  })
+
   return (
     <section id='remember' className='remember'>
       <h1>Remember</h1>
@@ -6,7 +17,7 @@ const Remember = () => {
       <div className='facts'>
         <article> <h2>Centenary</h2>
           <p>
-            2017 marked the centenary of the Battle of Passchendaele with events taking place in Belgium in July.
+            2017 marked the centenary of the Battle of <a className='background-detail'>Passchendaele</a> with events taking place in Belgium in July.
           </p>
         </article>
 
@@ -36,7 +47,7 @@ const Remember = () => {
 
         <article> <h2>A fateful number</h2>
           <p>
-            Around 325,000 Allied and 260,000 German soldiers died in the Battle. Some 42,000 bodies have never been recovered.
+            Around 325,000 Allied and 260,000 German soldiers died in the Battle. Some <a className='background-detail'>42,000 bodies</a> have never been recovered.
           </p>
         </article>
 
