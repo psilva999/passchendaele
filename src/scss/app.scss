@@ -1,6 +1,9 @@
 @import 'config';
+
 @import 'mixins';
 @import 'keyframes';
+
+//*, *:before, *:after
 
 * {
   box-sizing:border-box;
@@ -85,11 +88,11 @@ body {
     }
   }
 
-  #about, #timeline {
+  #about {
     padding:rem(120) 0;
   }
 
-  #soldiers, #remember {
+  #soldiers, #remember, #timeline {
     padding:rem(80) 0;
     background:$dark-war;
     width:100vw;
@@ -99,6 +102,10 @@ body {
       margin-left:rem(-12) !important;
       text-align:left;
     }
+  }
+
+  #soldiers {
+    background:none !important;
   }
 
   .close-menu-by-outside {
@@ -170,7 +177,7 @@ body {
 @import 'about';
 @import 'soldiers';
 
-//@import 'timeline';
+@import 'timeline';
 @import 'remember';
 
 @import 'newsletter';

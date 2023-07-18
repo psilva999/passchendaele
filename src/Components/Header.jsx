@@ -52,17 +52,6 @@ const Header = () => {
           </Link>
 
           <Link activeClass="active"
-            to='soldiers'
-            spy={ true }
-            smooth={ true }
-            offset={ 20 }
-            duration={ 500 }
-            className='link-scroll'>
-
-            <li onClick={ handleItems }>soldiers</li>
-          </Link>
-
-          <Link activeClass="active"
             to='timeline'
             spy={ true }
             smooth={ true }
@@ -71,6 +60,17 @@ const Header = () => {
             className='link-scroll'>
 
             <li onClick={ handleItems }>timeline</li>
+          </Link>
+
+          <Link activeClass="active"
+            to='soldiers'
+            spy={ true }
+            smooth={ true }
+            offset={ 20 }
+            duration={ 500 }
+            className='link-scroll'>
+
+            <li onClick={ handleItems }>soldiers</li>
           </Link>
 
           <Link activeClass="active"

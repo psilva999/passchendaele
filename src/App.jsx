@@ -5,8 +5,8 @@ import Header from './Components/Header'
 import Home from './Components/Home'
 
 import About from './Components/About'
-// import Soldiers from './Components/Soldiers'
-// import Timeline from './Components/Timeline'
+import Timeline from './Components/Timeline'
+import Soldiers from './Components/Soldiers'
 
 import Remember from './Components/Remember'
 import Newsletter from './Components/Newsletter'
@@ -57,8 +57,8 @@ function App() {
         <Home/>
         <About/>
 
-        {/* <Soldiers/>
-        <Timeline/> */}
+        <Timeline/>
+        <Soldiers/>
 
         <Remember/>
         <Newsletter/>

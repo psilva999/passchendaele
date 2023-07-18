@@ -1,1 +1,156 @@
 @import 'config';
+
+#timeline { 
+  @include grid;
+  padding-bottom:9rem !important;
+
+  div {
+    display:grid;
+    gap:rem(62);
+    margin-top:rem(150);
+  }
+
+  div, span {
+    @include size-container;
+  }
+
+  ul {
+    @include flex;
+    justify-content:space-between !important;
+    flex-wrap:wrap;
+  }
+
+  article {
+    display:grid;
+    gap:rem(7);
+    width:rem(375);
+    position:relative;
+  }
+
+  ul:first-child { 
+    article:nth-child(1) {
+      width:rem(390);
+      margin-top:rem(-70);
+    }
+
+    article:nth-child(2) {
+      left:rem(-27);
+      margin-top:rem(-260);
+    }
+
+    article:nth-child(3) {
+      left:rem(-27);
+      width:rem(200);
+    }
+  }
+
+  ul:last-child {
+    article:nth-child(1) {
+      left:rem(160);
+      margin-top:rem(-10);
+    }
+
+    article:nth-child(2) {
+      left:rem(-57);
+      top:rem(40);
+    }
+  }
+
+  h2 {
+    color:$time-title;
+    font-size:rem(19);
+    letter-spacing:rem(1);
+  }
+
+  p {
+    color:$time-text;
+    font-size:rem(14);
+    letter-spacing:rem(1);
+
+    @include weight;
+  }
+
+  .line {
+    width:100%;
+    background:$line;
+    height:rem(2);
+
+    &:after {
+      content:'';
+      display:block;
+      margin-left:rem(1040);
+      margin-top:rem(-9.5);
+      position:absolute;
+      width:rem(21);
+      height:rem(21);
+      background:url('../assets/svg/5-more.svg');
+    }
+  }
+
+  ol {
+    @include flex;
+
+    width:rem(843);
+    position:absolute;
+    margin-top:rem(-4);
+    justify-content:space-between;
+
+    li {
+      position:relative;
+      width:rem(10);
+      height:rem(10);
+      border-radius:100%;
+      background:$point;
+
+      &:before {
+        content:'';
+        display:block;
+        position:absolute;
+        background:$line-to-dot;
+        width:rem(1);
+        margin-left:rem(5);
+      }
+
+      &:first-child:before {
+        margin-top:rem(-83);
+        height:rem(70);
+      }
+
+      &:nth-child(2) {
+        left:rem(-47);
+
+        &:before {
+          margin-top:rem(17);
+          height:rem(42);
+          margin-left:rem(4);
+        }
+      }
+
+      &:nth-child(3) {
+        left:rem(-7);
+
+        &:before {
+          margin-top:rem(-174);
+          height:rem(160);
+        }
+      }
+
+      &:nth-child(4) {
+        left:rem(4);
+
+        &:before {
+          margin-top:rem(20);
+          height:rem(83);
+          margin-left:rem(4);
+        }
+      }
+
+      &:last-child:before {
+        margin-top:rem(-53);
+        height:rem(45);
+        margin-left:rem(4);
+      }
+    }
+
+  }
+}
