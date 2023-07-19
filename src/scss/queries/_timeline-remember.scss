@@ -62,6 +62,8 @@
   }
 
   #timeline {
+    padding-bottom:0 !important;
+
     .line:after {
       margin-left:rem(525);
       margin-top:rem(-9.6);
@@ -187,8 +189,115 @@
   }
 }
 
+@media (max-width:rem(720)) {
+  #timeline {
+    gap:rem(45);
+    padding-bottom:2.5rem !important;
+
+    span, ol {
+      width:rem(600) !important;
+    }
+    
+    span {
+      top:rem(-92);
+      left:rem(90);
+    }
+
+    ul, article {
+      margin-top:rem(0) !important;
+      left:rem(0) !important;
+      top:0 !important;
+    }
+
+    ul h2, p {
+      text-align:right;
+      width:100%;
+    }
+
+    ul:first-child {
+      article:nth-child(1) {
+        width:rem(285);
+        left:rem(60) !important;
+      }
+
+      article:nth-child(2) {
+        margin-top:rem(30) !important;
+      }
+
+      article:nth-child(3) {
+        left:rem(140) !important;
+        margin-top:rem(30) !important;
+      }
+    }
+
+    ul:last-child {
+      top:rem(-100) !important;
+
+      article:nth-child(1) {
+        left:rem(23) !important;
+      }
+  
+      article:nth-child(2) {
+        top:rem(30) !important;
+        left:rem(100) !important;
+      }
+    }
+
+    ol li {
+      &:first-child:before {
+        margin-top:rem(16);
+        height:rem(29);
+        left:rem(-1);
+      }
+
+      &:nth-child(2) {
+        left:rem(-10);
+
+        &:before {
+          margin-top:rem(16);
+          height:rem(53) !important;
+          margin-left:rem(5);
+        }
+      }
+
+      &:nth-child(3) {
+        left:rem(-17);
+
+        &:before {
+          margin-top:rem(15);
+          height:rem(33);
+        }
+      }
+
+      &:nth-child(4) {
+        left:rem(-49);
+
+        &:before {
+          top:rem(-5);
+          height:rem(52);
+        }
+      }
+
+      &:last-child {
+        left:rem(-57);
+      }
+
+      &:last-child:before {
+        margin-top:rem(13);
+        height:rem(40);
+        margin-left:rem(4);
+      }
+    }
+
+    .line:after {
+      margin-left:rem(590);
+    }
+    
+  }
+}
+
 @media (max-width:rem(640)) {
-  #soldiers, #remember, #timeline {
+  #soldiers, #remember {
     gap:rem(45) !important;
 
     h1, .facts, p {
@@ -199,10 +308,121 @@
       gap:rem(36);
     }
   }
+
+  #timeline {
+    gap:rem(15) !important;
+
+    h1, div, ul {
+      @include little-size;
+    }
+  }
+}
+
+@media (max-width:rem(450)) {
+  #timeline {
+    padding-bottom:7rem !important;
+
+    div, ul {
+      @include min-size;
+    }
+
+    span, ol {
+      width:rem(680) !important;
+    }
+
+    .line:after {
+      margin-left:rem(670);
+    }
+
+    span {
+      top:rem(-72);
+      left:rem(-80);
+    }
+
+    ul:first-child {
+      article:nth-child(1) {
+        width:rem(233) !important;
+        left:rem(5) !important;
+      }
+
+      article:nth-child(2) {
+        left:rem(-10) !important;
+        margin-top:rem(30) !important;
+        width:rem(250);
+      }
+
+      article:nth-child(3) {
+        left:rem(40) !important;
+        margin-top:rem(30) !important;
+      }
+    }
+
+    ul:last-child {
+      top:rem(-100) !important;
+
+      article:nth-child(1) {
+        width:rem(230) !important;
+        left:rem(10) !important;
+      }
+  
+      article:nth-child(2) {
+        top:rem(30) !important;
+        width:rem(230) !important;
+        left:rem(10) !important;
+      }
+    }
+
+    ol li {
+      &:first-child:before {
+        margin-top:rem(13);
+        height:rem(12);
+        left:rem(-1);
+      }
+
+      &:nth-child(2) {
+        left:rem(-29);
+
+        &:before {
+          margin-top:rem(12);
+          height:rem(11) !important;
+          margin-left:rem(5);
+        }
+      }
+
+      &:nth-child(3) {
+        left:rem(-36);
+
+        &:before {
+          margin-top:rem(12);
+          height:rem(11);
+        }
+      }
+
+      &:nth-child(4) {
+        left:rem(-90);
+
+        &:before {
+          top:rem(-8);
+          height:rem(12);
+        }
+      }
+
+      &:last-child {
+        left:rem(-97);
+      }
+
+      &:last-child:before {
+        margin-top:rem(12);
+        height:rem(12);
+        margin-left:rem(4);
+      }
+    }
+
+  }
 }
 
 @media (max-width:rem(410)) {
-    #soldiers, #remember, #timeline {
+  #soldiers, #remember {
     gap:rem(35) !important;
 
     h1, .facts, p {
@@ -211,6 +431,12 @@
 
     .facts {
       gap:rem(30);
+    }
+  }
+
+  #timeline {
+    h1, div, ul {
+      @include min-size;
     }
   }
 }

@@ -4,24 +4,6 @@
   @include grid;
   padding-bottom:9rem !important;
 
-  background:purple !important;
-
-  div {
-    background:black;
-  }
-
-  ul {
-    background:pink;
-  } 
-
-  article {
-    background:grey;
-  }
-
-  h1 {
-    background:#1a1b1c;
-  }
-
   h1, div {
     position:relative;
     left:rem(2) !important;
