@@ -6,7 +6,7 @@ import Home from './Components/Home'
 
 import About from './Components/About'
 import Timeline from './Components/Timeline'
-import Soldiers from './Components/Soldiers'
+// import Soldiers from './Components/Soldiers'
 
 import Remember from './Components/Remember'
 import Newsletter from './Components/Newsletter'
@@ -58,7 +58,7 @@ function App() {
         <About/>
 
         <Timeline/>
-        <Soldiers/>
+        {/* <Soldiers/> */}
 
         <Remember/>
         <Newsletter/>
