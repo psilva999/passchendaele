@@ -4,8 +4,21 @@
   @include grid;
   gap:rem(38);
 
+  .slide-wrapper, .slide {
+    overflow:hidden !important;
+  }
+
   h1, .slide {
     @include to-appear;
+  }
+
+  .slide {
+    display:flex;
+    width:rem(1250);
+    background:black;
+    gap:rem(17);
+    //assim que o slide funfa
+    transform:translate3d(0px,0px,0px);
   }
 
   figure {
