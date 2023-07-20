@@ -10,15 +10,14 @@ import fig5 from '../assets/images/slide/fig5.jpg'
 import Slide from '../events/slide'
 
 const Soldiers = () => {
-  useEffect(() => {
-    //mostrando quais containers serão utilizados
+  useEffect(() => initSlide)
+
+  function initSlide() {
     const handleSlide = new Slide('.slide', '.slide-wrapper')
 
-    //inicia o slide
     handleSlide.init()
-
-    console.log(handleSlide)
-  })
+    console.log('ja ta')
+  }
 
   return (
 
