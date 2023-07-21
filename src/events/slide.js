@@ -16,8 +16,6 @@ export default class Slide {
     //mudar o transform 
     this.wrapper.style.transform = 
     `translate3d(${distX}px, 0, 0)`
-
-    console.log(this.slide)
   }
  
   //atualiza posiçao do mouse/touch
@@ -31,33 +29,53 @@ export default class Slide {
   }
 
   onStart(e) {
-    e.preventDefault()
+    let movetype
 
-    //pra saber a posição do mouse
-    this.dist.startX = e.clientX
-    this.wrapper.addEventListener('pointermove', this.onMove)
+    if (e.type === 'pointerdown') {
+      e.preventDefault()
+
+      //pra saber a posição do mouse
+      this.dist.startX = e.clientX
+      movetype = 'pointermove'
+    }
+    
+    //evento mobile
+    else {
+      this.dist.startX = e.changedTouches[0].clientX
+      movetype = 'touchmove'
+    }
+
+    this.wrapper.addEventListener(movetype, this.onMove)
   }
 
   onMove(e) {
+    //define se é pointer ou touch
+    const pointerPosition = (e.type === 'pointermove')?
+    e.clientX : e.changedTouches[0].clientX
+
     //ativando o updatePosition
-    const finalPosition = this.updatePosition(e.clientX)
+    const finalPosition = this.updatePosition(pointerPosition)
 
     this.moveSlide(finalPosition)
   }
 
-  onEnd() {
-    this.wrapper.removeEventListener('pointermove', this.onMove)
+  onEnd(e) {
+    const movetype = (e.type === 'pointerup')? 'pointermove' : 'touchmove'
+
+    this.wrapper.removeEventListener(movetype, this.onMove)
 
     //salvar o distX
     this.dist.finalPosition = this.dist.movePosition
   }
 
   addSlideEvents() {
+    //eventos de pointer e touch
     this.wrapper.addEventListener('pointerdown', this.onStart)
-    
+    this.wrapper.addEventListener('touchstart', this.onStart)
+
     this.wrapper.addEventListener('pointerup', this.onEnd)
+    this.wrapper.addEventListener('touchend', this.onEnd)
     // document.addEventListener('pointerup', this.onEnd)
-    // document.addEventListener('touchend', this.onEnd)
   }
 
   bindEvents() {
