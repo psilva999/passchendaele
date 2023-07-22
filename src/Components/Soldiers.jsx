@@ -16,7 +16,7 @@ const Soldiers = () => {
     const handleSlide = new Slide('.slide', '.slide-wrapper')
 
     handleSlide.init()
-    console.log('ja ta')
+    handleSlide.changeSlide(0)
   }
 
   return (

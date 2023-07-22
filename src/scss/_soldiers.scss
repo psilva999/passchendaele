@@ -1,31 +1,32 @@
 @import 'config';
 
-#soldiers {
-  @include grid;
+#soldiers { 
+  @include flex;
+  flex-wrap:wrap;
   gap:rem(38);
 
-  h1, .slide {
+  h1, .slide-wrapper {
     @include to-appear;
   }
 
-  // .slide-wrapper {
-  //   //assim que o slide funfa
-  //   transform:translate3d(0px,0px,0px);
-  // }
+  .slide-wrapper {
+    background:black;
+  }
 
   .slide {
     display:flex;
-    background:black;
     gap:rem(17);
   }
 
   figure {
+    flex-shrink:0;
     display:grid;
     gap:rem(9);
   }
 
   img {
-    width:rem(950);
+    width:80vw;
+    max-width:rem(950);
     height:rem(450);
     object-fit:cover;
   }
@@ -44,7 +45,7 @@
       background:$b1;
       width:rem(2);
       height:rem(17);
-      margin-left:rem(-6);
+      margin-left:rem(-5);
       margin-top:rem(2);
       opacity:.8;
     }
