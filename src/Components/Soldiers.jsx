@@ -8,13 +8,14 @@ import fig4 from '../assets/images/slide/fig4.jpg'
 import fig5 from '../assets/images/slide/fig5.jpg'
 import fig6 from '../assets/images/slide/fig6.jpg'
 
-import Slide from '../events/slide'
+import SlideMin from '../events/slideMinifier'
+// import Slide from '../events/slide'
 
 const Soldiers = () => {
   useEffect(() => initSlide)
 
   function initSlide() {
-    const handleSlide = new Slide('.slide', '.slide-wrapper')
+    const handleSlide = new SlideMin('.slide', '.slide-wrapper')
 
     handleSlide.init()
   }
