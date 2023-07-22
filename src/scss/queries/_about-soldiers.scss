@@ -47,6 +47,15 @@
       }
     }
   }
+
+  #soldiers {
+    gap:rem(27) !important;
+
+    img {
+      width:rem(400);
+      height:rem(500);
+    }
+  }
 }
 
 @media (max-width:rem(640)) {
@@ -90,6 +99,17 @@
       }
     }
   }
+
+  #soldiers {
+    .slide-wrapper {
+      margin-top:-1.4rem;
+    }
+
+    img {
+      width:rem(300);
+      height:rem(400);
+    }
+  }
 }
 
 @media (max-width:rem(410)) {
@@ -119,6 +139,17 @@
       img:last-child {
         height:rem(150);
       }
+    }
+  }
+
+  #soldiers {
+    img {
+      width:rem(250);
+      height:rem(330);
+    }
+
+    figcaption {
+      letter-spacing:rem(.5);
     }
   }
 }

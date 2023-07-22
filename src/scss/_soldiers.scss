@@ -4,6 +4,7 @@
   @include flex;
   flex-wrap:wrap;
   gap:rem(38);
+  padding-bottom:5.8rem !important;
 
   h1, .slide-wrapper {
     @include to-appear;
