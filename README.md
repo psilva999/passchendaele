@@ -1,10 +1,10 @@
-# Passchendaele-WW1
-The Third Battle of Ypres during the first World War
+# Passchendaele
+The Third Battle of Ypres in the first World War
 
 Site: https://psilva999.github.io/passchendaele/
 
 ## Technologies
-___
+
 * Figma
 * React
 * JavaScript
@@ -14,7 +14,7 @@ ___
 * SCSS
 
 ## What i applied in the project:
-___
+
 * Responsive Design
 * Scroll Effect
 * Scroll Reveal
@@ -22,9 +22,9 @@ ___
 * Timeline
 * Debounce
 * Regex E-mail
-___
-### `vite`:
 
+### `vite`:
+___
 `npm init vite`
 
 `cd nome-app`
@@ -37,7 +37,7 @@ ___
 `npm i react-scroll`
 
 ## Github-page
-___
+
 --Create a remote repo
 
 0 - git remote remove origin
@@ -64,7 +64,7 @@ export default defineConfig({
   plugins: [framework()]
 })
 
-------
+___
 
 0 - npm run build
 
