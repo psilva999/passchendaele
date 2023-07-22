@@ -23,8 +23,9 @@ Site: https://psilva999.github.io/passchendaele/
 * Debounce
 * Regex E-mail
 
-### `vite`:
 ___
+### `vite`:
+
 `npm init vite`
 
 `cd nome-app`

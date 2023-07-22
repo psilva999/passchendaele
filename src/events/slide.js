@@ -1,4 +1,4 @@
-// import debounce from './debounce.js'
+import debounce from './debounce.js'
 
 export default class Slide {
   
@@ -174,10 +174,7 @@ export default class Slide {
     this.onMove = this.onMove.bind(this)
 
     this.onEnd = this.onEnd.bind(this)
-    this.onResize = this.onResize.bind(this)
-
-    //trocar por esse
-    //this.onResize = debounce(this.onResize.bind(this), 200)
+    this.onResize = debounce(this.onResize.bind(this), 50)
   }
 
   init() {
