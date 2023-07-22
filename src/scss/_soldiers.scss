@@ -9,19 +9,28 @@
     @include to-appear;
   }
 
-  .slide-wrapper {
-    background:black;
-  }
-
   .slide {
     display:flex;
-    gap:rem(17);
+    gap:rem(11);
+
+    &:hover {
+      will-change:transform;
+    }
   }
 
   figure {
     flex-shrink:0;
     display:grid;
     gap:rem(9);
+    position:relative;
+    opacity:.5;
+    transform:scale(.8);
+    transition:.3s;
+
+    &.active {
+      opacity:1;
+      transform:scale(1);
+    }
   }
 
   img {
@@ -34,7 +43,11 @@
   figcaption {
     color:$opaque-text;
     letter-spacing:rem(1);
-    margin-left:rem(5);
+    position:absolute;
+    background:black;
+    width:100%;
+    text-align:left;
+    bottom:0;
 
     @include weight;
 
