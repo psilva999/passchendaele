@@ -42,25 +42,16 @@
 
   figcaption {
     color:$opaque-text;
-    letter-spacing:rem(1);
+    letter-spacing:rem(1.5);
     position:absolute;
-    background:black;
+    background:rgba(9,8,9,1);
+    font-size:rem(14);
     width:100%;
     text-align:left;
     bottom:0;
+    padding:rem(3) rem(3);
+    border-left:rem(3) solid $b1;
 
     @include weight;
-
-    &:before {
-      content:'';
-      display:block;
-      position:absolute;
-      background:$b1;
-      width:rem(2);
-      height:rem(17);
-      margin-left:rem(-5);
-      margin-top:rem(2);
-      opacity:.8;
-    }
   }
 }

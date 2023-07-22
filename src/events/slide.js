@@ -183,10 +183,11 @@ export default class Slide {
   init() {
     this.bindEvents()
     this.transition(true)
-
     this.addSlideEvents()
+
     this.slideConfig()
     this.addResizeEvent()
+    this.changeSlide(1)
 
     return this
   }

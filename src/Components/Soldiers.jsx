@@ -17,7 +17,6 @@ const Soldiers = () => {
     const handleSlide = new Slide('.slide', '.slide-wrapper')
 
     handleSlide.init()
-    handleSlide.changeSlide(0)
   }
 
   return (
@@ -27,14 +26,14 @@ const Soldiers = () => {
 
       <article className='slide-wrapper'>
         <div className='slide'>
-          <figure> <img src={ fig1 } alt="Price"/>
-
-            <figcaption>The price of a mile</figcaption>
-          </figure>
-
           <figure> <img src={ fig2 } alt="tank"/>
 
             <figcaption>Dreams of freedom turn to dust</figcaption>
+          </figure>
+
+          <figure> <img src={ fig1 } alt="price of a mile"/>
+
+            <figcaption>The price of a mile</figcaption>
           </figure>
 
           <figure> <img src={ fig3 } alt="fade"/>
