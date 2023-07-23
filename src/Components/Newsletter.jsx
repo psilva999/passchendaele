@@ -1,14 +1,15 @@
 import { useEffect } from 'react'
 
 import news from '../assets/images/7-newsletter.jpg'
-import { revealNewsFooter } from '../events/scrollReveal'
+import scrollReveal from '../events/scrollReveal'
+
 
 const Newsletter = () => {
   useEffect(() => { 
     document.querySelector('form button').addEventListener('click', handleEmail)
 
     window.addEventListener('scroll', () => 
-    revealNewsFooter(document.querySelector('.newsletter')))
+    scrollReveal(document.querySelector('.newsletter'), 100))
   })
 
   function regex() {

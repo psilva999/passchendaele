@@ -15,7 +15,7 @@ import scrollReveal from '../events/scrollReveal'
 const Soldiers = () => {
   useEffect(() =>
     window.addEventListener('scroll', () =>
-    scrollReveal(document.querySelector('.soldiers'))))
+    scrollReveal(document.querySelector('.soldiers'), 200)))
 
   useEffect(() => initSlide)
 

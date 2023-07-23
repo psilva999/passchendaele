@@ -1,5 +1,33 @@
 @import 'config';
 
+.timeline {
+  h1, div {
+    opacity:0;
+  }
+
+  &.active {
+    h1 {
+      @include from-right;
+    }
+
+    div {
+      opacity:1;
+    }
+
+    article, li:nth-child(odd) {
+      animation:show-from-top 1s linear forwards;
+    }
+
+    li:nth-child(even) {
+      animation:show-from-bottom 1s linear forwards;
+    }
+
+    li:before, span, .line {
+      animation:full-opacity .7s linear forwards;
+    }
+  }
+}
+
 #timeline { 
   @include grid;
   padding-bottom:9rem !important;

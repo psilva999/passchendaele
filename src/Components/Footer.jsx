@@ -10,12 +10,12 @@ import Master from '../assets/images/9-master.png'
 import Pay from '../assets/images/10-pay.png'
 import Discover from '../assets/images/11-discover.png'
 
-import { revealNewsFooter } from '../events/scrollReveal'
+import scrollReveal from '../events/scrollReveal'
 
 const Footer = () => {
   useEffect(() =>
     window.addEventListener('scroll', () => 
-    revealNewsFooter(document.querySelector('footer'))))
+    scrollReveal(document.querySelector('footer'), 100)))
 
   return (
 

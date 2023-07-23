@@ -3,8 +3,6 @@ export default function debounce(callback, delay) {
   let timer
 
   return (...args) => {
-    console.log("sabaton")
-
     if (timer) clearTimeout(timer)
 
     timer = setTimeout(() => { 

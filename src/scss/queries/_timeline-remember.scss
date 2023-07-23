@@ -61,6 +61,19 @@
     padding-bottom:6rem !important;
   }
 
+  .timeline {
+  
+    &.active {
+      article, li:nth-child(odd) {
+        animation:show-from-left 1s linear forwards;
+      }
+  
+      li:nth-child(even) {
+        animation:show-from-right 1s linear forwards;
+      }
+    }
+  }
+
   #timeline {
     padding-bottom:0 !important;
 

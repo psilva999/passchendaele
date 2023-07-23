@@ -145,3 +145,30 @@
     padding-top:rem(5);
   }
 }
+
+@keyframes full-size {
+  from {
+    width:0%;
+  }
+
+  to {
+    width:100%;
+  }
+}
+
+@keyframes boom {
+  0% {
+    width:rem(10);
+    height:rem(10);
+  }
+
+  50% {
+    width:rem(25);
+    height:rem(25);
+  }
+
+  100% {
+    width:rem(10);
+    height:rem(10);
+  }
+}
