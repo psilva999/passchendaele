@@ -1,9 +1,8 @@
 @import 'config';
 
 .home {
-  width:100vw;
-  height:100vh;
   display:none;
+  height:100vh;
 
   &.active {
     h1 {

@@ -21,11 +21,8 @@ const Header = () => {
 
     window.scrollY >= 3 ? setFixed(true) : setFixed(false)
 
-    console.log(window.scrollY)
-
-    if (window.scrollY <= 330 && oldScrollY > window.scrollY) {
+    if (window.scrollY <= 330 && oldScrollY > window.scrollY) 
       document.querySelectorAll('nav li').forEach(items => items.classList.remove('active'))
-    }
 
     oldScrollY = window.scrollY
   }

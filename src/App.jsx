@@ -40,6 +40,7 @@ function App() {
       <Header/>
 
       <main>
+        <Home/>
         <img src={ Background } className='background'/>
 
         <Link activeClass="active"
@@ -54,7 +55,6 @@ function App() {
           <span><img src={ Arrow }/></span> </section>
         </Link>
 
-        <Home/>
         <About/>
 
         <Timeline/>
