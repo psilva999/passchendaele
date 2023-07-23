@@ -22,7 +22,7 @@
       }
     }
 
-    .imgs.active {
+    .imgs {
       @include middle-size;
 
       left:0;
@@ -66,7 +66,7 @@
       gap:rem(6) !important;
     }
 
-    p, .imgs.active {
+    p, .imgs {
       @include little-size;
     }
 
@@ -78,7 +78,7 @@
       }
     }
 
-    .imgs.active {
+    .imgs {
       gap:rem(9);
 
       img {
@@ -122,7 +122,7 @@
       font-size:rem(17);
     }
 
-    .imgs.active {
+    .imgs {
       gap:rem(3);
       
       @include min-size;

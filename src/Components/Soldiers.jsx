@@ -9,9 +9,14 @@ import fig5 from '../assets/images/slide/fig5.jpg'
 import fig6 from '../assets/images/slide/fig6.jpg'
 
 import SlideMin from '../events/slideMinifier'
+import scrollReveal from '../events/scrollReveal'
 // import Slide from '../events/slide'
 
 const Soldiers = () => {
+  useEffect(() =>
+    window.addEventListener('scroll', () =>
+    scrollReveal(document.querySelector('.soldiers'))))
+
   useEffect(() => initSlide)
 
   function initSlide() {
@@ -22,7 +27,7 @@ const Soldiers = () => {
 
   return (
 
-    <section id='soldiers'>
+    <section id='soldiers' className='soldiers'>
       <h1>Soldiers</h1>
 
       <article className='slide-wrapper'>

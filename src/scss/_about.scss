@@ -1,7 +1,7 @@
 @import 'config';
 
 #about {
-  &, .imgs.active {
+  & {
     @include flex;
   }
 
@@ -11,13 +11,8 @@
 
   article {
     gap:rem(21);
-    display:none !important;
 
-    &.active {
-      @include from-left;
-    }
-
-    &.active, div {
+    div {
       display:grid !important;  
     }
 
@@ -37,9 +32,6 @@
 
   .imgs {
     display:none;
-  }
-
-  .imgs.active {
     align-items:start;
     gap:rem(12);
     position:relative;
@@ -48,13 +40,35 @@
     img {
       width:rem(164);
       object-fit:cover;
-      
-      @include from-right;
 
       &:nth-child(2) {
         margin-top:rem(-62);
       }
     }
 
+  }
+}
+
+.about {
+  article, img {
+    opacity:0;
+  }
+
+  article {
+    display:grid !important; 
+  }
+
+  .imgs {
+    display:flex !important;
+  }
+
+  &.active {
+    article {
+      @include from-left;
+    }
+
+    img {
+      @include from-right;
+    }
   }
 }

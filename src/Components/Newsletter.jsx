@@ -1,7 +1,16 @@
 import { useEffect } from 'react'
+
 import news from '../assets/images/7-newsletter.jpg'
+import { revealNewsFooter } from '../events/scrollReveal'
 
 const Newsletter = () => {
+  useEffect(() => { 
+    document.querySelector('form button').addEventListener('click', handleEmail)
+
+    window.addEventListener('scroll', () => 
+    revealNewsFooter(document.querySelector('.newsletter')))
+  })
+
   function regex() {
     const input = document.querySelector('#email'),
           button = document.querySelector('form button'),
@@ -12,8 +21,6 @@ const Newsletter = () => {
 
     else button.disabled = true
   }
-
-  useEffect(() => document.querySelector('form button').addEventListener('click', handleEmail))
 
   function handleEmail(e) {
     const input = document.querySelector('#email'),

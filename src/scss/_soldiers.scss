@@ -1,14 +1,26 @@
 @import 'config';
 
+.soldiers {
+  h1, .slide-wrapper {
+    opacity:0;
+  }
+
+  &.active {
+    h1 {
+      @include from-left;
+    }
+
+    .slide-wrapper {
+      @include from-right;
+    }
+  }
+}
+
 #soldiers { 
   @include flex;
   flex-wrap:wrap;
   gap:rem(38);
   padding-bottom:5.8rem !important;
-
-  h1, .slide-wrapper {
-    @include to-appear;
-  }
 
   .slide {
     display:flex;

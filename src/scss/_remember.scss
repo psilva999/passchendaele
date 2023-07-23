@@ -1,19 +1,30 @@
 @import 'config';
 
+.remember {
+  h1, .facts {
+    opacity:0;
+  }
+
+  &.active {
+    h1 {
+      @include from-top;
+    }
+
+    .facts {
+      @include from-bottom;
+    }
+  }
+}
+
 #remember {
   @include grid;
   
   gap:rem(75);
   padding-bottom:7.5rem !important;
 
-  h1 {
-    @include from-top;
-  }
-
   .facts {
     @include flex;
     @include size-container;
-    @include from-bottom;
 
     align-items:start !important;
     flex-wrap:wrap;

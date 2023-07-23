@@ -5,15 +5,20 @@ import Troops from '../assets/images/2-troops.jpg'
 import Horses from '../assets/images/3-horses.jpg'
 
 import { textBackground } from '../events/highlighter'
+import scrollReveal from '../events/scrollReveal'
 
 const About = () => {
-  useEffect(() => 
-    window.addEventListener('scroll', () => textBackground(0, 'rgba(166,150,88,0)', 'rgba(166,150,88,.6)')))
+  useEffect(() => { 
+    window.addEventListener('scroll', () => { 
+      textBackground(0, 'rgba(166,150,88,0)', 'rgba(166,150,88,.6)')
+      scrollReveal(document.querySelector('.about'))
+    })
+  })
 
   return (
 
-    <section id='about'>
-      <article className='active'>
+    <section id='about' className='about'>
+      <article>
         <h1>About</h1>
 
         <div>
@@ -31,7 +36,7 @@ const About = () => {
         </div>
       </article>
 
-      <div className='imgs active'>
+      <div className='imgs'>
         <img src={ Death } alt="death of a soldier"/>
         <img src={ Troops } alt="troops"/>
         <img src={ Horses } alt="a soldier in a horse"/>

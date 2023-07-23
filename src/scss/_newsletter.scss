@@ -1,13 +1,19 @@
 @import 'config';
 
+.newsletter {
+  opacity:0;
+
+  &.active {
+    animation:full-opacity .7s linear forwards;
+  }
+}
+
 #newsletter {
   background:grey;
   position:relative;
   margin:6rem 0 6rem 0;
   height:rem(280);
   width:rem(825);
-
-  @include to-appear;
 
   &, article, form {
     @include grid;

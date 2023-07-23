@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import Logo from '../assets/svg/0-logo.svg'
 
 import Face from '../assets/svg/1-face.svg'
@@ -9,7 +10,13 @@ import Master from '../assets/images/9-master.png'
 import Pay from '../assets/images/10-pay.png'
 import Discover from '../assets/images/11-discover.png'
 
+import { revealNewsFooter } from '../events/scrollReveal'
+
 const Footer = () => {
+  useEffect(() =>
+    window.addEventListener('scroll', () => 
+    revealNewsFooter(document.querySelector('footer'))))
+
   return (
 
     <footer>

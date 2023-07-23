@@ -1,12 +1,14 @@
 import { useEffect } from 'react'
 
 import { textBackground } from '../events/highlighter'
+import scrollReveal from '../events/scrollReveal'
 
 const Remember = () => {
   useEffect(() => {
     window.addEventListener('scroll', () => { 
       textBackground(1, 'rgba(9,8,9,0)', 'rgba(9,8,9,.6)')
       textBackground(2, 'rgba(9,8,9,0)', 'rgba(9,8,9,.6)')
+      scrollReveal(document.querySelector('.remember'))
     })
   })
 
