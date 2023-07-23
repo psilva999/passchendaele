@@ -6,6 +6,8 @@ import Logo from '../assets/svg/0-logo.svg'
 import { handleItems, hideMenu, openMenu } from '../events/handleMenu'
 
 const Header = () => {
+  let oldScrollY = window.scrollY
+
   //menu fixed
   const [fixed, setFixed] = useState()
 
@@ -16,7 +18,16 @@ const Header = () => {
   })
 
   const checkScroll = () => {
+
     window.scrollY >= 3 ? setFixed(true) : setFixed(false)
+
+    console.log(window.scrollY)
+
+    if (window.scrollY <= 330 && oldScrollY > window.scrollY) {
+      document.querySelectorAll('nav li').forEach(items => items.classList.remove('active'))
+    }
+
+    oldScrollY = window.scrollY
   }
 
   return (

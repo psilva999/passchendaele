@@ -6,10 +6,12 @@ footer {
   opacity:0;
   margin:3rem auto .5rem auto;
   gap:rem(90);
+  overflow:hidden !important;
   width:rem(1050);
+  position:relative;
 
   &.active {
-    @include from-bottom;
+    @include from-top;
   }
   
   section, .copy {

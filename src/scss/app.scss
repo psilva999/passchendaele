@@ -20,6 +20,10 @@ html, body {
 body {
   background:$fogwar;
   overflow-y:auto;
+  
+  &, main {
+    width:100vw;
+  }
 
   main, .home.active {
     overflow-x:hidden;

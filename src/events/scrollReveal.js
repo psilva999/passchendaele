@@ -1,7 +1,21 @@
-export default function scrollReveal(container, number) {
+export default function scrollReveal(container, number, li) {
   let showContainer = window.innerHeight - number,
       showTop = container.getBoundingClientRect().top
 
-  if (showTop < showContainer && !container.classList.contains("active"))
-    container.classList.add('active')
+  if (showTop < showContainer) {
+    if (!container.classList.contains("active"))
+      container.classList.add('active')
+
+    handleLi(li)
+  }
+}
+
+function handleLi(e) {
+  const li = document.querySelectorAll('nav li'),
+        arrayLi = [...li]
+  
+  li.forEach(items => items.classList.remove('active'))
+
+  if (!arrayLi[e].classList.add('active'))
+    arrayLi[e].classList.add('active')
 }
