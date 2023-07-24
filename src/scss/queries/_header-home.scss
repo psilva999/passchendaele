@@ -1,9 +1,6 @@
 @media (max-width:rem(1300)) {
   header {
-    justify-content:space-between;
-    gap:0;
-    padding-left:rem(17);
-    padding-right:rem(19);
+    gap:rem(530);
 
     .menu {
       gap:rem(10);
@@ -13,6 +10,7 @@
 
 @media (max-width:rem(1055)) {
   header {
+    gap:rem(450);
 
     .toggle-menu {
       display:block;
@@ -89,6 +87,8 @@
 @media (max-width:rem(640)) {
 
   header {
+    gap:rem(350);
+
     .logo {
       width:rem(42);
 
@@ -136,8 +136,15 @@
 }
 
 @media (max-width:rem(480)) {
-  header .menu.active li {
-    width:rem(150);
+  header {
+    justify-content:space-between;
+    gap:0;
+    padding-left:rem(17);
+    padding-right:rem(19);
+    
+    .menu.active li {
+      width:rem(150);
+    }
   }
 
   .home {
