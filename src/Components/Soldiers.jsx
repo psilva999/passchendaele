@@ -10,19 +10,20 @@ import fig6 from '../assets/images/slide/fig6.jpg'
 
 import SlideMin from '../events/slideMinifier'
 import scrollReveal from '../events/scrollReveal'
-// import Slide from '../events/slide'
 
 const Soldiers = () => {
-  useEffect(() =>
+  useEffect(() => { 
     window.addEventListener('scroll', () =>
-    scrollReveal(document.querySelector('.soldiers'), 200, 2)))
-
-  useEffect(() => initSlide)
+    scrollReveal(document.querySelector('.soldiers'), 2))
+    
+    initSlide()
+  })
 
   function initSlide() {
     const handleSlide = new SlideMin('.slide', '.slide-wrapper')
 
     handleSlide.init()
+    handleSlide.changeSlide(1)
   }
 
   return (

@@ -8,7 +8,7 @@ const Remember = () => {
     window.addEventListener('scroll', () => { 
       textBackground(1, 'rgba(9,8,9,0)', 'rgba(9,8,9,.6)')
       textBackground(2, 'rgba(9,8,9,0)', 'rgba(9,8,9,.6)')
-      scrollReveal(document.querySelector('.remember'), 200, 3)
+      scrollReveal(document.querySelector('.remember'), 3)
     })
   })
 

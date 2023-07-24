@@ -4,7 +4,7 @@ import scrollReveal from "../events/scrollReveal"
 const Timeline = () => {
   useEffect(() => 
   window.addEventListener("scroll", () => 
-  scrollReveal(document.querySelector('.timeline'), 300, 1)))
+  scrollReveal(document.querySelector('.timeline'), 1)))
 
   return (
 

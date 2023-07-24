@@ -15,7 +15,7 @@ import scrollReveal from '../events/scrollReveal'
 const Footer = () => {
   useEffect(() =>
     window.addEventListener('scroll', () => 
-    scrollReveal(document.querySelector('footer'), 100, undefined)))
+    scrollReveal(document.querySelector('footer'), undefined)))
 
   return (
 

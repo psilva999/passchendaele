@@ -1,5 +1,5 @@
-export default function scrollReveal(container, number, li) {
-  let showContainer = window.innerHeight - number,
+export default function scrollReveal(container, li) {
+  let showContainer = window.innerHeight - 100,
       showTop = container.getBoundingClientRect().top
 
   if (showTop < showContainer) {

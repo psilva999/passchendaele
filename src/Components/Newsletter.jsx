@@ -9,7 +9,7 @@ const Newsletter = () => {
     document.querySelector('form button').addEventListener('click', handleEmail)
 
     window.addEventListener('scroll', () => 
-    scrollReveal(document.querySelector('.newsletter'), 100, undefined))
+    scrollReveal(document.querySelector('.newsletter'), undefined))
   })
 
   function regex() {

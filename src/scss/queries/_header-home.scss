@@ -140,12 +140,18 @@
     width:rem(150);
   }
 
-  .home p {
-    max-width:rem(280);
+  .home {
+    article {
+      margin-top:-1rem;
+    }
+    
+    p {
+      max-width:rem(280);
+    }
   }
 }
 
-@media (max-width:rem(390)) {
+@media (max-width:rem(340)) {
   .home {
     article {
       width:95vw;
@@ -160,7 +166,8 @@
     }
 
     p {
-      font-size:rem(16);
+      font-size:rem(14);
+      width:rem(260);
       letter-spacing:rem(2);
     }
   }

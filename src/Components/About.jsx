@@ -11,7 +11,7 @@ const About = () => {
   useEffect(() => { 
     window.addEventListener('scroll', () => { 
       textBackground(0, 'rgba(166,150,88,0)', 'rgba(166,150,88,.6)')
-      scrollReveal(document.querySelector('.about'), 200, 0)
+      scrollReveal(document.querySelector('.about'), 0)
     })
   })
 
